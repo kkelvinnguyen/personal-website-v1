@@ -1,0 +1,799 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a.link:link {
+    color: #bfdbff;
+    border-bottom: 0.1em solid #bfdbff;
+    letter-spacing: 0.3px;
+}
+
+a.link:visited {
+    color: #bfdbff;
+}
+
+a.link:hover {
+    color: white;
+    background-color: transparent;
+    border-bottom: 0.1em solid white;
+    letter-spacing: 0.3px;
+}
+
+a.link:active {
+    color: aliceblue;
+    background-color: transparent;
+    border-bottom: 0.1em solid white;
+    letter-spacing: 0.3px;
+}
+
+body {
+    background: #F4F7FF;
+    height: 100vh;
+}
+
+#logo {
+    height: 5%;
+    width: 5%;
+    min-width: 40px;
+}
+
+header {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    transition: 0.6s;
+
+}
+
+header.sticky {
+    background-color: white;
+    padding: 15px 100px;
+}
+
+header .brand {
+    color: aliceblue;
+    font-size: 30px;
+}
+
+header .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu a {
+    color: #515f94;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0 25px;
+    padding: 0 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 10px;
+    transition: 0.3s;
+    transition-property: color, white;
+}
+
+header .menu a:hover {
+    color: #bfdbff;
+    background: #1f255e;
+}
+
+.landingpage {
+    width: 100%;
+    height: 100vh;
+    background-color: #F4F7FF;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 10vh;
+    gap: 3.5vw;
+}
+
+h1 {
+    background-color: #1e2562;
+    border-radius: 75px;
+    padding: 20px 50px;
+}
+
+.col1 {
+    height: 50vh;
+    min-width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3vw;
+}
+
+.col2 {
+    margin-right: 2vw;
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: right;
+}
+
+
+.boldtitle {
+    font-weight: 500;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.projects {
+    width: 100%;
+    height: auto;
+    background-color: #1e2562;
+    display: flex;
+    flex-direction: column;
+}
+
+#proj {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    margin-left: 10vw;
+}
+
+.proj1 {
+    align-items: center;
+    display: flex;
+}
+
+.proj2 {
+    align-items: center;
+    display: flex;
+}
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 0.9px;
+}
+
+h3 {
+    color: #C5C7DF;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    width: 36.8vw;
+}
+
+.phone1 {
+    height: 80%;
+    width: 50%;
+    transform: translateX(4.2%);
+    z-index: 2;
+
+}
+
+.wirePhone {
+    height: 70%;
+    width: 33%;
+    z-index: 1;
+}
+
+.imgbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    background-color: #F4F7FF;
+    align-items: center;
+    margin-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.connector {
+    display: flex;
+}
+
+.c1 {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+}
+
+.c2 {
+    width: 100%;
+}
+
+.ipad {
+    transform: translateX(-5.3%);
+}
+
+.endingheader {
+    font-weight: 500;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 1px;
+    max-width: 28vw;
+}
+
+.c3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+    max-width: 30vw;
+    margin-right: 5vw;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.endingheader {
+    width: 100%;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 50px;
+}
+
+h5 {
+    background-color: #1e2562;
+    text-align: center;
+    font-size: 40px;
+}
+
+.end {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+}
+
+h6 {
+    text-align: center;
+    color: #1e2562;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+
+@media only screen and (max-width: 768px) {
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    #logo {
+        height: 5%;
+        width: 5%;
+        min-width: 40px;
+    }
+
+    header {
+        display: none;
+    }
+
+    header .menu a {
+        color: #515f94;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        margin: 0 25px;
+        padding: 0 15px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        border-radius: 10px;
+        transition: 0.3s;
+        transition-property: color, white;
+    }
+
+    header .menu a:hover {
+        color: #bfdbff;
+        background: #1f255e;
+    }
+
+    a.link:link {
+        color: #bfdbff;
+        border-bottom: 0.1em solid #bfdbff;
+        letter-spacing: 0.3px;
+    }
+
+    a.link:visited {
+        color: #bfdbff;
+    }
+
+    a.link:hover {
+        color: white;
+        background-color: transparent;
+        border-bottom: 0.1em solid white;
+        letter-spacing: 0.3px;
+    }
+
+    a.link:active {
+        color: aliceblue;
+        background-color: transparent;
+        border-bottom: 0.1em solid white;
+        letter-spacing: 0.3px;
+    }
+
+    body {
+        background: #F4F7FF;
+        height: 100vh;
+    }
+
+    .landingpage {
+        width: 100%;
+        height: 100vh;
+        background-color: #F4F7FF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10vh;
+        gap: 3.5vw;
+    }
+
+    .computer {
+        height: 90%;
+        display: flex;
+        margin-left: 5vw;
+        align-items: center;
+    }
+
+    h1 {
+        background-color: #1e2562;
+        border-radius: 75px;
+        padding: 20px 50px;
+    }
+
+    .col1 {
+        height: 50vh;
+        min-width: 35vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 3vw;
+    }
+
+    .col2 {
+        margin-right: 2vw;
+        margin-bottom: 2vh;
+        display: flex;
+        justify-content: right;
+    }
+
+
+    .boldtitle {
+        font-weight: 500;
+        font-size: 40px;
+        color: white;
+        letter-spacing: 1px;
+    }
+
+    .projects {
+        width: 100%;
+        height: auto;
+        background-color: #1e2562;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #proj {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10vw;
+    }
+
+    .proj1 {
+        align-items: center;
+        display: flex;
+    }
+
+    .proj2 {
+        align-items: center;
+        display: flex;
+    }
+
+    .textbox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 32px;
+        color: white;
+        letter-spacing: 0.9px;
+        margin-right: 18vw;
+    }
+
+    h3 {
+        color: #C5C7DF;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 1.4;
+        width: 80vw;
+    }
+
+    .phone1 {
+        height: 90%;
+        width: 50%;
+        transform: translateX(6.5%);
+        z-index: 2;
+
+    }
+
+    .wirePhone {
+        height: 18%;
+        width: 60%;
+        z-index: 1;
+    }
+
+    .imgbox {
+        display: flex;
+        align-items: center;
+        margin-top: 3vw;
+        justify-content: center;
+    }
+
+    .footer {
+        width: 100%;
+        display: flex;
+        background-color: #F4F7FF;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
+    .connector {
+        display: flex;
+        margin-right: 10vw;
+    }
+
+    .wireIpad {
+        width: 100%;
+        height: 10%;
+    }
+
+    .c1 {
+        display: flex;
+        align-items: center;
+    }
+
+    .c2 {
+        width: 65vw;
+        transform: translateX(-2.5vw);
+    }
+
+    .endingheader {
+        font-weight: 500;
+        color: white;
+        letter-spacing: 1px;
+        background-color: #1e2562;
+        border-radius: 75px;
+        margin-top: 5vh;
+        padding: 20px 40px;
+        border-radius: 50px;
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .c3 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5vw;
+        max-width: 30vw;
+        margin-right: 5vw;
+        align-items: center;
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+    }
+
+    h5 {
+        text-align: center;
+    }
+
+    .end {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2vh;
+        padding-top: 2vh;
+    }
+
+    h6 {
+        text-align: center;
+        color: #1e2562;
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 1.4;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    #logo {
+        height: 5%;
+        width: 5%;
+        min-width: 40px;
+    }
+
+    header {
+        display: none;
+    }
+
+    header .menu a {
+        color: #515f94;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        margin: 0 25px;
+        padding: 0 15px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        border-radius: 10px;
+        transition: 0.3s;
+        transition-property: color, white;
+    }
+
+    header .menu a:hover {
+        color: #bfdbff;
+        background: #1f255e;
+    }
+
+    a.link:link {
+        color: #bfdbff;
+        border-bottom: 0.1em solid #bfdbff;
+        letter-spacing: 0.3px;
+    }
+
+    a.link:visited {
+        color: #bfdbff;
+    }
+
+    a.link:hover {
+        color: white;
+        background-color: transparent;
+        border-bottom: 0.1em solid white;
+        letter-spacing: 0.3px;
+    }
+
+    a.link:active {
+        color: aliceblue;
+        background-color: transparent;
+        border-bottom: 0.1em solid white;
+        letter-spacing: 0.3px;
+    }
+
+    body {
+        background: #F4F7FF;
+        height: 100vh;
+    }
+
+    .landingpage {
+        width: 100%;
+        height: 100vh;
+        background-color: #F4F7FF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10vh;
+        gap: 3.5vw;
+    }
+
+    .computer {
+        height: 90%;
+        display: flex;
+        margin-left: 5vw;
+        align-items: center;
+    }
+
+    h1 {
+        background-color: #1e2562;
+        border-radius: 75px;
+        padding: 20px 50px;
+    }
+
+    .col1 {
+        display: none;
+    }
+
+    .col2 {
+        margin-right: 2vw;
+        margin-bottom: 2vh;
+        display: flex;
+        justify-content: right;
+    }
+
+
+    .boldtitle {
+        font-weight: 500;
+        font-size: 40px;
+        color: white;
+        letter-spacing: 1px;
+    }
+
+    .projects {
+        width: 100%;
+        height: auto;
+        background-color: #1e2562;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #proj {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10vw;
+    }
+
+    .proj1 {
+        align-items: center;
+        display: flex;
+    }
+
+    .proj2 {
+        align-items: center;
+        display: flex;
+    }
+
+    .textbox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 32px;
+        color: white;
+        letter-spacing: 0.9px;
+        margin-right: 18vw;
+    }
+
+    h3 {
+        color: #C5C7DF;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 1.4;
+        width: 80vw;
+    }
+
+    .phone1 {
+        height: 90%;
+        width: 50%;
+        transform: translateX(6.5%);
+        z-index: 2;
+
+    }
+
+    .wirePhone {
+        height: 18%;
+        width: 60%;
+        z-index: 1;
+    }
+
+    .imgbox {
+        display: flex;
+        align-items: center;
+        margin-top: 3vw;
+        justify-content: center;
+    }
+
+    .footer {
+        width: 100%;
+        display: flex;
+        background-color: #F4F7FF;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
+    .connector {
+        display: flex;
+        margin-right: 10vw;
+    }
+
+    .wireIpad {
+        width: 100%;
+        height: 10%;
+    }
+
+    .c1 {
+        display: flex;
+        align-items: center;
+    }
+
+    .c2 {
+        width: 65vw;
+        transform: translateX(-2.5vw);
+    }
+
+    .endingheader {
+        font-weight: 500;
+        color: white;
+        letter-spacing: 1px;
+        background-color: #1e2562;
+        border-radius: 75px;
+        margin-top: 5vh;
+        padding: 20px 40px;
+        border-radius: 50px;
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .c3 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5vw;
+        max-width: 30vw;
+        margin-right: 5vw;
+        align-items: center;
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+    }
+
+    h5 {
+        text-align: center;
+        font-size: 8xpx;
+
+    }
+
+    .end {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2vh;
+        padding-top: 2vh;
+    }
+
+    h6 {
+        text-align: center;
+        color: #1e2562;
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 1.4;
+    }
+}

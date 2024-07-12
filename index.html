@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>kelvinnguyen</title>
+        <link rel="icon" href="images/favicon.png">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+        <style>
+        img {
+            width: 100%;
+            border-radius: 0px;
+            margin-right: 0px;
+            position: relative;
+        }
+
+        body {
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        * {
+            text-decoration: none;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="#"><img src="images/logo.png" id="logo"></a>
+            <div class="menu">
+              <a class="buttonheader" href="#project-anchor">Projects</a>
+              <a class="buttonheader" id="contactMe" href="#contact-anchor">Contact Me</a>
+            </div>
+            <script type="text/javascript">
+                window.addEventListener("scroll", function () {
+                  var header = document.querySelector("header");
+                  header.classList.toggle("sticky", window.scrollY > 0);
+                });
+            </script>
+        </header>
+        <div class="landingpage">
+            <div class="col1">
+                <h1 data-aos="zoom-out-right" data-aos-delay="800" data-aos-offset="0"
+                data-aos-duration="900" class="boldtitle">welcome to <br> my <b>website! &#128173;</b></h1>
+            </div>
+            <div class="col2">
+                <img data-aos="zoom-in" data-aos-delay="800" data-aos-offset="0"
+                data-aos-duration="900" src="images/computer.png" id="computer" class="computer" />
+            </div>
+        </div>
+        <div class="projects">
+            <div class="transition1">
+                <img data-aos="fade-down"
+                data-aos-offset="0"
+                data-aos-duration="350" src="images/transition1.png" id="project-anchor" class="transition1" />  
+            </div>
+            <div class="proj1" id="proj">
+                <div data-aos="fade-right" data-aos-offset="100" data-aos-delay="800"
+                data-aos-duration="900" class="textbox">
+                    <h2>
+                        Learning Java isn't easy, I get it. &#128548;
+                    </h2>
+                    <h3>
+                        <br>In my mini-series called <b>Java Crash Course</b>, I help new Java
+                        programmers understand the concept of methods (which can be complicated) by teaching them
+                        in a simple manner.
+                    </h3>
+                    <h4>
+                        <a
+                        class="link" id="link" href="https://github.com/kkelvinnguyen/Java-Crash-Course-Methods" target="_blank">
+                        <br>See it in action </a>
+                    </h4>
+                </div>
+                <div class="imgbox">
+                    <img src="images/phone1.png" id="phone1" class="phone1" />  
+                    <img data-aos="fade-left" data-aos-offset="100"
+                    data-aos-duration="900" src="images/wirePhone.png" id="wirePhone" class="wirePhone" /> 
+                </div>
+            </div>
+            <div class="proj2" id="proj">
+                <div data-aos="fade-right" data-aos-offset="100" data-aos-delay="800"
+                data-aos-duration="900" class="textbox">
+                    <h2>
+                        Leveraging AI to predict future wildfires. &#127781;
+                    </h2>
+                    <h3>
+                        <br>Placing 4th overall in Hack The 6ix, <b>FIREcast</b> integrates 
+                        geo-coding and weather data APIs to aid experts in identifying high-risk 
+                        zones while allowing participation on a global scale.
+                    </h3>
+                    <h4>
+                        <a
+                        class="link" id="link" href="https://devpost.com/software/firecast" target="_blank">
+                        <br>See it in action </a>
+                    </h4>
+                </div>
+                <div class="imgbox">
+                    <img src="images/phone2.png" id="phone1" class="phone1" />  
+                    <img data-aos="fade-left" data-aos-offset="100"
+                    data-aos-duration="900" src="images/wirePhone.png" id="wirePhone" class="wirePhone" /> 
+                </div>
+            </div>
+            <div class="proj2" id="proj">
+                <div data-aos="fade-right" data-aos-offset="100" data-aos-delay="800"
+                data-aos-duration="900" class="textbox">
+                    <h2>
+                        Hunt for treasure in an ever-changing maze. &#128270;
+                    </h2>
+                    <h3>
+                        <br>Coding a remake of the classic board game <b>Labyrinth</b>, I worked on inserting the tiles 
+                        into the board, adding animations, sound effects, and designing and integrating the GUI.
+                    </h3>
+                    <h4>
+                        <a
+                        class="link" id="link" href="https://github.com/kkelvinnguyen/labyrinth" target="_blank">
+                        <br>See it in action </a>
+                    </h4>
+                </div>
+                <div class="imgbox">
+                    <img src="images/phone3.png" id="phone1" class="phone1" />  
+                    <img data-aos="fade-left" data-aos-offset="100"
+                    data-aos-duration="900" src="images/wirePhone.png" id="wirePhone" class="wirePhone" /> 
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="connector">
+                <div class="c1">
+                    <img data-aos="fade-right" data-aos-offset="100"
+                    data-aos-duration="900" src="images/wireIpad.png" id="wireIpad" class="wireIpad" />
+                </div>
+                <div class="c2">
+                    <img src="images/ipad.png" id="ipad" class="ipad" />
+                </div>
+            </div>
+            <div class="c3" data-aos="zoom-out-left" data-aos-delay="450" data-aos-offset="0"
+            data-aos-duration="900">
+                <h5 
+                    class="endingheader"> Let's <b>Connect!</b></h5>
+                <div class="icons">
+                    <a href= "https://github.com/kkelvinnguyen" target="_blank"><img src="images/github.png" id="github"></a>
+                    <a href= "https://www.linkedin.com/in/kelvin-nguyen-8a3347276/" target="_blank"><img src="images/linkedin.png" id="linkedin"></a>
+                    <a href= "mailto: nguyenkelvin021@gmail.com"><img src="images/email.png" id="email"></a>
+                </div>
+            </div>
+        </div>
+        <div class="end" id="contact-anchor">
+            <h6>
+                <b>powered by imagination.</b><br>kelvin nguyen, 2024. &#128301;<br>
+            </h6>
+        </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+    </body>
+</html>
